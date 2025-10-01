@@ -13,33 +13,21 @@ typedef pair<int, int> pi;
 #define MP make_pair
 #define REP(i, a, b) for (int i = a; i <= b; i++)
 
+//int get_max(int n, int num[]) {
+
+//}
+
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int t;
+    int a[5];
 
-    cin >> t;
+    for(int i : a)
+        cin >> a[i];
 
-    int count = 0;
-
-    while(t--) {
-        int a, b;
-
-        cin >> a >> b;
-
-        int MAX = max(a, b);
-        int MIN = min(a, b);
-
-        while(MAX != MIN) {
-            if(MAX - MIN > 10) {
-                MAX -= 10;
-                count++;
-            } else {
-                MAX -= MIN;
-                count++;
-            }
-            cout << count << '\n';
-        }
-    }
+    for(int i : a)
+        cout << a << ' ';
+    
+    return 0;
 }

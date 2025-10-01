@@ -13,9 +13,11 @@ int main() {
 
     max = num1 > num2 ? num1 : num2;
 
+    // перевірка чи є змінна max більшою за num3
     if(max > num3)
         printf("The maximum nuber is %d", max);
     else
         printf("The maximum number is %d", num3);
     
+    return 0;
 }
